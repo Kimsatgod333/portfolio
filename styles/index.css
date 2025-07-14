@@ -1,0 +1,137 @@
+header {
+    position:relative;
+    width:100%;
+    padding:10px 240px;
+    display:flex;
+    justify-content:center;
+}
+header nav {
+    display:flex;
+    gap:60px;
+}
+header nav a {
+    font-weight:500;
+}
+main {}
+main #wrap {
+    width:100%;
+    height:calc(100vh - 36px);
+}
+main #wrap .swiper-wrapper {}
+main #wrap .swiper-wrapper .swiper-slide {
+    padding:50px 240px;
+}
+main #wrap .swiper-wrapper .intro {
+    background:#F8FAFC;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+}
+main #wrap .swiper-wrapper .intro h1 {
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:30px;
+    color:#A294F9;
+}
+main #wrap .swiper-wrapper .intro p {
+    font-size:1.375rem;
+    font-weight:600;
+    color:#BCCCDC;
+}
+main #wrap .swiper-wrapper .profile {
+    background:#D9EAFD;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+main #wrap .swiper-wrapper .profile .info {
+    width:100%;
+    display:flex
+}
+main #wrap .swiper-wrapper .profile .info .text_wrap  {
+    margin-right:120px;
+    text-align:right;
+}
+main #wrap .swiper-wrapper .profile .info .text_wrap h2 {
+    font-size:1.75rem;
+    font-weight:500;
+    margin-bottom:30px;
+}
+main #wrap .swiper-wrapper .profile .info .text_wrap p {}
+main #wrap .swiper-wrapper .profile .info .text_wrap p:nth-last-of-type(1) {
+    margin:10px 0;
+}
+main #wrap .swiper-wrapper .profile .education {}
+main #wrap .swiper-wrapper .profile .education h2 {
+    margin-bottom:30px;
+}
+main #wrap .swiper-wrapper .profile .education ul {}
+main #wrap .swiper-wrapper .profile .education ul li {}
+main #wrap .swiper-wrapper .profile .skills {}
+main #wrap .swiper-wrapper .profile .skills h2 {
+    margin-bottom:30px;
+}
+main #wrap .swiper-wrapper .profile .skills ul {
+    position: relative;
+    display:flex;
+    gap:15px;
+}
+main #wrap .swiper-wrapper .profile .skills ul li {}
+main #wrap .swiper-wrapper .profile .skills ul li img {
+    width:48px;
+}
+main #wrap .swiper-wrapper .profile .skills ul li span {}
+main #wrap .swiper-wrapper .profile .license {}
+main #wrap .swiper-wrapper .profile .license h2 {
+    margin-bottom:30px;
+}
+main #wrap .swiper-wrapper .profile .license ul {}
+main #wrap .swiper-wrapper .profile .license ul li {}
+main #wrap .swiper-wrapper .project {
+    background:#BCCCDC;
+}
+main #wrap .swiper-wrapper .project h2 {
+    font-size:2.5rem;
+    font-weight:600;
+    color:#1e239a;
+    margin-bottom:40px;
+}
+main #wrap .swiper-wrapper .project .project_swiper {}
+main #wrap .swiper-wrapper .project .project_swiper {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide {
+    display:flex;
+    justify-content:center;
+}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-button-prev {
+    color:#fff;
+}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-button-next {
+    color:#fff;
+}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-scrollbar {}
+main #wrap .swiper-wrapper .design {
+    background:#BCCCDC;
+}
+main #wrap .swiper-wrapper .design .design_swiper {}
+main #wrap .swiper-wrapper .design .design_swiper .swiper-wrapper {}
+main #wrap .swiper-wrapper .design .design_swiper .swiper-wrapper .swiper-slide {}
+main #wrap .swiper-wrapper .design .design_swiper .swiper-button-prev {
+    color:#fff;
+}
+main #wrap .swiper-wrapper .design .design_swiper .swiper-button-next {
+    color:#fff;
+}
+main #wrap .swiper-wrapper .design .design_swiper .swiper-scrollbar {}
+main #wrap .swiper-wrapper .contact {
+    background:#9AA6B2;
+}
+main #wrap .swiper-wrapper .contact h2 {}
+main #wrap .swiper-wrapper .contact .tel {}
+main #wrap .swiper-wrapper .contact .tel h3 {}
+main #wrap .swiper-wrapper .contact .tel p {}
+main #wrap .swiper-wrapper .contact .mail {}
+main #wrap .swiper-wrapper .contact .mail h3 {}
+main #wrap .swiper-wrapper .contact .mail p {}
