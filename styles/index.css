@@ -19,7 +19,7 @@ main #wrap {
 }
 main #wrap .swiper-wrapper {}
 main #wrap .swiper-wrapper .swiper-slide {
-    padding:50px 240px;
+    padding:120px 240px;
 }
 main #wrap .swiper-wrapper .intro {
     background:#F8FAFC;
@@ -37,7 +37,6 @@ main #wrap .swiper-wrapper .intro h1 {
 main #wrap .swiper-wrapper .intro p {
     font-size:1.375rem;
     font-weight:600;
-    color:#BCCCDC;
 }
 main #wrap .swiper-wrapper .profile {
     background:#D9EAFD;
@@ -65,12 +64,14 @@ main #wrap .swiper-wrapper .profile .info .text_wrap p:nth-last-of-type(1) {
 }
 main #wrap .swiper-wrapper .profile .education {}
 main #wrap .swiper-wrapper .profile .education h2 {
+    font-size:1.375rem;
     margin-bottom:30px;
 }
 main #wrap .swiper-wrapper .profile .education ul {}
 main #wrap .swiper-wrapper .profile .education ul li {}
 main #wrap .swiper-wrapper .profile .skills {}
 main #wrap .swiper-wrapper .profile .skills h2 {
+    font-size:1.375rem;
     margin-bottom:30px;
 }
 main #wrap .swiper-wrapper .profile .skills ul {
@@ -82,9 +83,23 @@ main #wrap .swiper-wrapper .profile .skills ul li {}
 main #wrap .swiper-wrapper .profile .skills ul li img {
     width:48px;
 }
-main #wrap .swiper-wrapper .profile .skills ul li span {}
+main #wrap .swiper-wrapper .profile .skills ul li span {
+    position:absolute;
+    top:50px;
+    width:100%;
+    background:#fff;
+    padding:10px;
+    border-radius:10px;
+    left:0;
+    transition:all 0.3s;
+    opacity:0;
+}
+main #wrap .swiper-wrapper .profile .skills ul li img:hover + span{
+    opacity:1;
+}
 main #wrap .swiper-wrapper .profile .license {}
 main #wrap .swiper-wrapper .profile .license h2 {
+    font-size:1.375rem;
     margin-bottom:30px;
 }
 main #wrap .swiper-wrapper .profile .license ul {}
@@ -95,7 +110,6 @@ main #wrap .swiper-wrapper .project {
 main #wrap .swiper-wrapper .project h2 {
     font-size:2.5rem;
     font-weight:600;
-    color:#1e239a;
     margin-bottom:40px;
 }
 main #wrap .swiper-wrapper .project .project_swiper {}
@@ -103,7 +117,6 @@ main #wrap .swiper-wrapper .project .project_swiper {}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper {}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide {
     display:flex;
-    justify-content:center;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-button-prev {
     color:#fff;
@@ -114,6 +127,10 @@ main #wrap .swiper-wrapper .project .project_swiper .swiper-button-next {
 main #wrap .swiper-wrapper .project .project_swiper .swiper-scrollbar {}
 main #wrap .swiper-wrapper .design {
     background:#BCCCDC;
+}
+main #wrap .swiper-wrapper .design h2 {
+    font-size:2.5rem;
+    font-weight:600;
 }
 main #wrap .swiper-wrapper .design .design_swiper {}
 main #wrap .swiper-wrapper .design .design_swiper .swiper-wrapper {}
@@ -127,11 +144,49 @@ main #wrap .swiper-wrapper .design .design_swiper .swiper-button-next {
 main #wrap .swiper-wrapper .design .design_swiper .swiper-scrollbar {}
 main #wrap .swiper-wrapper .contact {
     background:#9AA6B2;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
 }
-main #wrap .swiper-wrapper .contact h2 {}
-main #wrap .swiper-wrapper .contact .tel {}
-main #wrap .swiper-wrapper .contact .tel h3 {}
-main #wrap .swiper-wrapper .contact .tel p {}
-main #wrap .swiper-wrapper .contact .mail {}
-main #wrap .swiper-wrapper .contact .mail h3 {}
-main #wrap .swiper-wrapper .contact .mail p {}
+main #wrap .swiper-wrapper .contact h2 {
+    font-size:2.5rem;
+    font-weight:600;
+    color:#fff;
+    width:100%
+}
+main #wrap .swiper-wrapper .contact > p {
+    font-size:1.375rem;
+    font-weight:500;
+    color:#fff;
+    margin:40px 0 80px;
+    width:100%
+}
+main #wrap .swiper-wrapper .contact .address_list {
+    display:flex;
+}
+main #wrap .swiper-wrapper .contact .address_list .tel {
+    margin-right:200px;
+}
+main #wrap .swiper-wrapper .contact .address_list .tel * {
+    color:#fff;
+}
+main #wrap .swiper-wrapper .contact .address_list .tel h3 {
+    font-size:1.375rem;
+    font-weight:500;
+    margin-bottom:20px;
+}
+main #wrap .swiper-wrapper .contact .address_list .tel p {
+    font-weight:500;
+}
+main #wrap .swiper-wrapper .contact .address_list .mail {}
+main #wrap .swiper-wrapper .contact .address_list .mail * {
+    color:#fff;
+}
+main #wrap .swiper-wrapper .contact .address_list .mail h3 {
+    font-size:1.375rem;
+    font-weight:500;
+    margin-bottom:20px;
+}
+main #wrap .swiper-wrapper .contact .address_list .mail p {
+    font-weight:500;
+}

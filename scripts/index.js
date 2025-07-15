@@ -29,9 +29,3 @@ nav.forEach((obj,idx)=>{
         pageSlide.slideTo(idx, 1000);
     })
 })
-const skills = document.querySelectorAll('.skills ul li');
-for(let i = 0 ; i < 6 ; i++){
-    skills[i] = addEventListener('mouseover', ()=>{
-        
-    })
-}
