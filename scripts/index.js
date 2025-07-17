@@ -7,6 +7,7 @@ const projectSwiper = new Swiper('.project_swiper',{
         prevEl:'.project_swiper .swiper-button-prev',
         nextEl:'.project_swiper .swiper-button-next',
     },
+    centeredSlides: true,
     scrollbar:{
         el:'.project_swiper .swiper-scrollbar'
     }
