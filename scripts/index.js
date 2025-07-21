@@ -27,6 +27,6 @@ nav.forEach((obj,idx)=>{
     console.log(obj, idx)
     obj.addEventListener('click',(e)=>{
         e.preventDefault();
-        pageSlide.slideTo(idx, 10000);
+        pageSlide.slideTo(idx, 1000);
     })
 })
