@@ -22,11 +22,19 @@ main #wrap .swiper-wrapper .swiper-slide {
     padding:120px 240px;
 }
 main #wrap .swiper-wrapper .intro {
-    background:#F8FAFC;
     display:flex;
     flex-flow:column;
     justify-content:center;
     align-items:center;
+}
+main #wrap .swiper-wrapper .intro .bg {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#F8FAFC url(../bg/bg1.png) repeat-x center / cover;
+    animation: bg_ani 30s linear infinite;
 }
 main #wrap .swiper-wrapper .intro h1 {
     font-size:3rem;
@@ -136,7 +144,6 @@ main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slid
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_img {
     width:200px;
     height:200px;
-    overflow:hidden;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_img a {}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_img a img {
@@ -159,7 +166,9 @@ main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slid
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_info .time {
     margin-bottom:12px;
 }
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_info .program {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_info .program {
+    margin-top:12px;
+}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap {
     display:flex;
     flex-flow:column nowrap;
@@ -279,4 +288,11 @@ main #wrap .swiper-wrapper .design .design_swiper .swiper-scrollbar {}
         transform:translateY(0);
     }
 }
-@keyframes obj {}
+@keyframes bg_ani {
+    0% {
+        background-position:0;
+    }
+    100% {
+        background-position:1920px;
+    }
+}
