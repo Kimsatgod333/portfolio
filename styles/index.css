@@ -34,7 +34,7 @@ main #wrap .swiper-wrapper .intro .bg {
     width:100%;
     height:100%;
     background:#F8FAFC url(../bg/bg1.png) repeat-x center / cover;
-    animation: bg_ani 20s linear infinite;
+    animation: bg_ani 30s linear infinite;
 }
 main #wrap .swiper-wrapper .intro h1 {
     font-size:3rem;
