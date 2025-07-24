@@ -76,13 +76,12 @@ main #wrap .swiper-wrapper .profile .info .text_wrap_left p:nth-last-of-type(1) 
     margin:10px 0;
 }
 main #wrap .swiper-wrapper .profile .info .profile_img {
-    margin:0 150px;
-    background:rgba(0,0,0,0.6);
-    width:300px;
-    height:300px;
+    margin:0 50px;
+    width:500px;
 }
 main #wrap .swiper-wrapper .profile .info .profile_img img {
     width:100%;
+    transform:translateY(-80px);
 }
 main #wrap .swiper-wrapper .profile .info .text_wrap_right {}
 main #wrap .swiper-wrapper .profile .info .text_wrap_right p {
@@ -304,16 +303,10 @@ main #wrap .swiper-wrapper .design h2 {
     font-size:2.5rem;
     font-weight:600;
 }
-main #wrap .swiper-wrapper .design .design_swiper {}
-main #wrap .swiper-wrapper .design .design_swiper .swiper-wrapper {}
-main #wrap .swiper-wrapper .design .design_swiper .swiper-wrapper .swiper-slide {}
-main #wrap .swiper-wrapper .design .design_swiper .swiper-button-prev {
-    color:#fff;
-}
-main #wrap .swiper-wrapper .design .design_swiper .swiper-button-next {
-    color:#fff;
-}
-main #wrap .swiper-wrapper .design .design_swiper .swiper-scrollbar {}
+main #wrap .swiper-wrapper .design .design_bnr_swiper {}
+main #wrap .swiper-wrapper .design .design_details_swiper {}
+main #wrap .swiper-wrapper .design .design_width_bnr_swiper .swiper-scrollbar {}
+main .popup_bg {}
 @keyframes text_ani {
     0% {
         opacity:0;
