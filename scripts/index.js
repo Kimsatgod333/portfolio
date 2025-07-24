@@ -4,22 +4,22 @@ const pageSlide = new Swiper('#wrap',{
 })
 const projectSwiper = new Swiper('.project_swiper',{
     navigation:{
-        prevEl:'.project_swiper .swiper-button-prev',
-        nextEl:'.project_swiper .swiper-button-next',
+        prevEl:'.project .slide_btn_wrap .swiper-button-prev',
+        nextEl:'.project .slide_btn_wrap .swiper-button-next',
     },
     centeredSlides: true,
     scrollbar:{
         el:'.project_swiper .swiper-scrollbar'
+    },
+    pagination:{
+        el:'.project .slide_btn_wrap .swiper-pagination',
+        type:'fraction',
     }
 })
 const designSwiper = new Swiper('.design_swiper',{
-    navigation:{
-        prevEl:'.design_swiper .swiper-button-prev',
-        nextEl:'.design_swiper .swiper-button-next',
-    },
-    scrollbar:{
-        el:'.design_swiper .swiper-scrollbar'
-    }
+    slidesPerView:4,
+    autoplay:{delay:0},
+    speed:4000,
 })
 //네비게이션
 const nav = document.querySelectorAll('nav a');

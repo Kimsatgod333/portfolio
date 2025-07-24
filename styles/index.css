@@ -1,3 +1,6 @@
+body, html {
+    min-width: 1920px;
+}
 header {
     position:relative;
     width:100%;
@@ -52,11 +55,10 @@ main #wrap .swiper-wrapper .profile {
     background:#D9EAFD;
     display:flex;
     flex-flow:row wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items:baseline;
 }
 main #wrap .swiper-wrapper .profile .info {
-    width:100%;
     display:flex;
 }
 main #wrap .swiper-wrapper .profile .info .text_wrap_left  {
@@ -75,22 +77,39 @@ main #wrap .swiper-wrapper .profile .info .text_wrap_left p:nth-last-of-type(1) 
 }
 main #wrap .swiper-wrapper .profile .info .profile_img {
     margin:0 150px;
+    background:rgba(0,0,0,0.6);
+    width:300px;
+    height:300px;
 }
-main #wrap .swiper-wrapper .profile .info .profile_img img {}
+main #wrap .swiper-wrapper .profile .info .profile_img img {
+    width:100%;
+}
 main #wrap .swiper-wrapper .profile .info .text_wrap_right {}
 main #wrap .swiper-wrapper .profile .info .text_wrap_right p {
     font-size:1.75rem;
+    line-height:1.8;
 }
 main #wrap .swiper-wrapper .profile .address_list {}
-main #wrap .swiper-wrapper .profile .address_list .tel {}
-main #wrap .swiper-wrapper .profile .address_list .tel h3 {}
+main #wrap .swiper-wrapper .profile .address_list .tel {
+    margin-bottom:25px;
+}
+main #wrap .swiper-wrapper .profile .address_list .tel h2 {
+    font-size:1.25rem;
+    font-weight:500;
+    margin-bottom:10px;
+}
 main #wrap .swiper-wrapper .profile .address_list .tel p {}
 main #wrap .swiper-wrapper .profile .address_list .mail {}
-main #wrap .swiper-wrapper .profile .address_list .mail h3 {}
+main #wrap .swiper-wrapper .profile .address_list .mail h2 {
+    font-size:1.25rem;
+    font-weight:500;
+    margin-bottom:10px;
+}
 main #wrap .swiper-wrapper .profile .address_list .mail p {}
 main #wrap .swiper-wrapper .profile .education {}
 main #wrap .swiper-wrapper .profile .education h2 {
     font-size:1.375rem;
+    font-weight:500;
     margin-bottom:30px;
 }
 main #wrap .swiper-wrapper .profile .education ul {
@@ -102,6 +121,7 @@ main #wrap .swiper-wrapper .profile .education ul li {}
 main #wrap .swiper-wrapper .profile .skills {}
 main #wrap .swiper-wrapper .profile .skills h2 {
     font-size:1.375rem;
+    font-weight:500;
     margin-bottom:30px;
 }
 main #wrap .swiper-wrapper .profile .skills ul {
@@ -114,6 +134,7 @@ main #wrap .swiper-wrapper .profile .skills ul li span {}
 main #wrap .swiper-wrapper .profile .license {}
 main #wrap .swiper-wrapper .profile .license h2 {
     font-size:1.375rem;
+    font-weight:500;
     margin-bottom:30px;
 }
 main #wrap .swiper-wrapper .profile .license ul {}
@@ -121,100 +142,121 @@ main #wrap .swiper-wrapper .profile .license ul li {}
 main #wrap .swiper-wrapper .project {
     background:#BCCCDC;
 }
+main #wrap .swiper-wrapper .title_wrap {
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+}
 main #wrap .swiper-wrapper .project h2 {
     font-size:2.5rem;
     font-weight:600;
-    margin-bottom:40px;
+}
+main #wrap .swiper-wrapper .project .swiper_btn_wrap {
+    display:flex;
+    width:300px;
+    align-items:center;
+}
+main #wrap .swiper-wrapper .project .swiper-button-prev {
+    color:#000;
+    transform:scale(0.6) translateX(1700px);
+}
+main #wrap .swiper-wrapper .project .swiper-button-next {
+    color:#000;
+    transform:scale(0.6);
+}
+main #wrap .swiper-wrapper .project .swiper-pagination {
+    color:#000;
+    transform:translateX(510px);
 }
 main #wrap .swiper-wrapper .project .project_swiper {
+    position:fixed;
+    left:0; top:0;
     width:100%;
     display:flex;
     justify-content:center;
+    height:100vh;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper {
     padding:20px;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide {
     display:flex;
+    flex-flow:column nowrap;
     align-items:center;
+    width:100%;
+}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap {
+    width:100%;
+    padding-top:60px;
+    display:flex;
     justify-content:space-between;
-    background-color:#f5f5f5;
+    margin-bottom:40px;
+}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_img {
+    width:900px;
+}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_img a {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_img a img {
     width:100%;
 }
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_img {
-    width:200px;
-    height:200px;
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_img a {}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_img a img {
-    width:100%;
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_info {}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_info p {
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info p {
     font-weight:500;
 }
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_info .name {
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info .name {
     font-size:1.5rem;
     font-weight:500;
     padding-bottom:20px;
     margin-bottom:30px;
     border-bottom:1px solid #000;
 }
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_info .date {
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info .date {
     margin:12px 0;
 }
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_info .time {
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info .time {
     margin-bottom:12px;
 }
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_info .program {
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info .program {
     margin-top:12px;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap {
     display:flex;
-    flex-flow:column nowrap;
     gap:15px;
+    transform:translate(520px, -90px);
 }
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .raw_btn {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .raw_btn {
+    position:absolute;
+    top:-60px;
+}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .raw_btn a {
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:5px 10px;
-    border-radius:10px;
     transition:all 0.3s;
+    padding-bottom:2px;
+    border-bottom:2px solid #000;
 }
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .raw_btn a:hover {
-    box-shadow:0 0 5px rgba(0,0,0,0.4);
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .temu .btn_wrap .raw_btn a {
-    background-color:#fb7701;
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .temu .btn_wrap .raw_btn a:hover {
-    background-color:#f07000;
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .funkita .btn_wrap .raw_btn a {
-    background-color:#3a50a6;
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .funkita .btn_wrap .raw_btn a:hover {
-    background-color:#203074;
-    box-shadow:0 0 5px rgba(0,0,0,0.4);
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .dongkook_ls .btn_wrap .raw_btn a {
-    background-color:#99ca3b;
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .dongkook_ls .btn_wrap .raw_btn a:hover {
-    background-color:#76b403;
-    box-shadow:0 0 5px rgba(0,0,0,0.4);
-}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .raw_btn a:hover {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .temu .btn_wrap .raw_btn a {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .temu .btn_wrap .raw_btn a:hover {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .funkita .btn_wrap .raw_btn a {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .funkita .btn_wrap .raw_btn a:hover {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .dongkook_ls .btn_wrap .raw_btn a {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .dongkook_ls .btn_wrap .raw_btn a:hover {}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .raw_btn a span {
-    color:#fff;
+    font-weight:500;
 }
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .raw_btn a img {
+    filter:invert(100%);
+}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .dongkook_ls .btn_wrap .raw_btn a img {}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .proto_btn  {}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .proto_btn a {
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:5px 10px;
+    padding:11px 0;
+    width:200px;
     border-radius:10px;
     background-color:#A2AADB;
     transition:all 0.3s;
@@ -232,7 +274,8 @@ main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slid
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:5px 10px;
+    padding:11px 0;
+    width:200px;
     border-radius:10px;
     background-color:#000;
     transition:all 0.3s;
@@ -248,17 +291,10 @@ main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slid
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .result_btn a:hover span {
     color:#000;
     transition:all 0.3s;
-
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap .result_btn a:hover img {
     filter:invert(100%);
     transition:all 0.3s;
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-button-prev {
-    color:#000;
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-button-next {
-    color:#000;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-scrollbar {}
 main #wrap .swiper-wrapper .design {
