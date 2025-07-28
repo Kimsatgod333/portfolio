@@ -24,14 +24,23 @@ const projectSwiper = new Swiper('.project_swiper',{
     },
 })
 const bnrSwiper = new Swiper('.design_bnr_swiper',{
-    slidesPerView:3,
-    spaceBetween:40,
+    slidesPerView:2,
+    spaceBetween:10,
+    autoplay:{delay:3000},
+    speed:700,
+    loop:true,
 })
 const widthSwiper = new Swiper('.design_width_bnr_swiper',{
-
+    slidesPerView:2,
+    spaceBetween:20,
+    autoplay:{delay:0},
+    speed:4000,
+    loop:true,
 })
 const detailsSwiper = new Swiper('.design_details_swiper',{
-    direction:'vertical'
+    direction:'vertical',
+    autoplay:{delay:3000},
+    loop:true,
 })
 //네비게이션
 const nav = document.querySelectorAll('nav a');
