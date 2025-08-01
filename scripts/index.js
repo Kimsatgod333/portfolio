@@ -51,3 +51,43 @@ nav.forEach((obj,idx)=>{
         pageSlide.slideTo(idx, 1000);
     })
 })
+//bg
+const popupBg = document.querySelector('.popup_bg');
+const popupImg = document.querySelector('.popup_bg img');
+const bnrDesign = document.querySelectorAll('.design_bnr_swiper .swiper-slide');
+const widthBnr = document.querySelectorAll('.design_width_bnr_swiper .swiper-slide');
+const detailDesign = document.querySelectorAll('.design_details_swiper .swiper-slide');
+for(let i = 0 ; i < 5 ; i++){
+    const popupFunc = (ind)=>{
+        bnrDesign[ind].addEventListener('click', ()=>{
+            popupBg.style.display = 'block';
+            popupImg.src = bnrDesign[ind].children[0].src;
+            pageSlide.mousewheel.disable()
+        })
+    }
+    popupFunc(i);
+}
+for(let i = 0 ; i < 4 ; i++){
+    const popupFunc = (ind)=>{
+        widthBnr[ind].addEventListener('click', ()=>{
+            popupBg.style.display = 'block';
+            popupImg.src = widthBnr[ind].children[0].src;
+            pageSlide.mousewheel.disable()
+        })
+    }
+    popupFunc(i);
+}
+for(let i = 0 ; i < 2 ; i++){
+    const popupFunc = (ind)=>{
+        detailDesign[ind].addEventListener('click', ()=>{
+            popupBg.style.display = 'block';
+            popupImg.src = detailDesign[ind].children[0].src;
+            pageSlide.mousewheel.disable()
+        })
+    }
+    popupFunc(i);
+}
+popupBg.addEventListener('click', ()=>{
+    popupBg.style.display = 'none';
+    pageSlide.mousewheel.enable()
+})
