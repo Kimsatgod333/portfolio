@@ -25,16 +25,16 @@ const projectSwiper = new Swiper('.project_swiper',{
 })
 const bnrSwiper = new Swiper('.design_bnr_swiper',{
     slidesPerView:2,
-    spaceBetween:10,
+    spaceBetween:7,
     autoplay:{delay:3000},
     speed:700,
     loop:true,
 })
 const widthSwiper = new Swiper('.design_width_bnr_swiper',{
     slidesPerView:2,
-    spaceBetween:20,
+    spaceBetween:7,
     autoplay:{delay:0},
-    speed:4000,
+    speed:8000,
     loop:true,
 })
 const detailsSwiper = new Swiper('.design_details_swiper',{
@@ -60,7 +60,7 @@ const detailDesign = document.querySelectorAll('.design_details_swiper .swiper-s
 for(let i = 0 ; i < 5 ; i++){
     const popupFunc = (ind)=>{
         bnrDesign[ind].addEventListener('click', ()=>{
-            popupBg.style.display = 'block';
+            popupBg.style.display = 'flex';
             popupImg.src = bnrDesign[ind].children[0].src;
             pageSlide.mousewheel.disable()
         })
@@ -70,7 +70,7 @@ for(let i = 0 ; i < 5 ; i++){
 for(let i = 0 ; i < 4 ; i++){
     const popupFunc = (ind)=>{
         widthBnr[ind].addEventListener('click', ()=>{
-            popupBg.style.display = 'block';
+            popupBg.style.display = 'flex';
             popupImg.src = widthBnr[ind].children[0].src;
             pageSlide.mousewheel.disable()
         })
@@ -80,7 +80,7 @@ for(let i = 0 ; i < 4 ; i++){
 for(let i = 0 ; i < 2 ; i++){
     const popupFunc = (ind)=>{
         detailDesign[ind].addEventListener('click', ()=>{
-            popupBg.style.display = 'block';
+            popupBg.style.display = 'flex';
             popupImg.src = detailDesign[ind].children[0].src;
             pageSlide.mousewheel.disable()
         })
@@ -91,3 +91,10 @@ popupBg.addEventListener('click', ()=>{
     popupBg.style.display = 'none';
     pageSlide.mousewheel.enable()
 })
+document.addEventListener('keydown', (e)=>{
+    console.log(e.key);
+    if (e.key === 'Escape') {
+        popupBg.style.display = 'none';
+        pageSlide.mousewheel.enable()
+    }
+});
