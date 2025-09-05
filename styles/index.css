@@ -181,10 +181,12 @@ main #wrap .swiper-wrapper .project .swiper_btn_wrap {
 main #wrap .swiper-wrapper .project .swiper-button-prev {
     color:#000;
     transform:scale(0.6) translateX(1700px);
+    z-index:99;
 }
 main #wrap .swiper-wrapper .project .swiper-button-next {
     color:#000;
     transform:scale(0.6);
+    z-index:99;
 }
 main #wrap .swiper-wrapper .project .swiper-pagination {
     color:#000;
@@ -211,19 +213,30 @@ main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slid
     width:100%;
     padding-top:60px;
     display:flex;
+    gap:60px;
     justify-content:space-between;
     margin-bottom:40px;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_img {
     width:900px;
+    margin-right:50px;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_img a {}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_img a img {
     width:100%;
 }
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info {}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info {
+    display:flex;
+    flex-flow:column nowrap;
+    text-align:left;
+    align-items:center;
+}
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info * {
+    width:100%;
+}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info p {
     font-weight:500;
+    transform:translate(0, 70px);
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info .name {
     font-size:1.5rem;
