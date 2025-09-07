@@ -62,8 +62,9 @@ main #wrap .swiper-wrapper .profile .profile_top {
     padding:80px 240px 0;
 }
 main #wrap .swiper-wrapper .profile .profile_bottom {
-    padding:40px 240px 120px;
+    padding:60px 240px 120px;
     width:100%;
+    height:1000px;
     display:flex;
     background:#333;
     justify-content:space-between;
@@ -213,26 +214,19 @@ main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slid
     width:100%;
     padding-top:60px;
     display:flex;
-    gap:60px;
-    justify-content:space-between;
     margin-bottom:40px;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_img {
     width:900px;
-    margin-right:50px;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_img a {}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_img a img {
     width:100%;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info {
+    transform:translateX(232px);
     display:flex;
     flex-flow:column nowrap;
-    text-align:left;
-    align-items:center;
-}
-main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info * {
-    width:100%;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info p {
     font-weight:500;
@@ -358,7 +352,7 @@ main #wrap .swiper-wrapper .design .design_bnr_swiper .swiper-wrapper .swiper-sl
 main #wrap .swiper-wrapper .design .design_bnr_swiper .swiper-wrapper .swiper-slide img {
     position:absolute;
     left:0; top:0;
-    width:480px;
+    width:100%;
 }
 main #wrap .swiper-wrapper .design .design_bnr_swiper .swiper-wrapper .slide1 {}
 main #wrap .swiper-wrapper .design .design_bnr_swiper .swiper-wrapper .slide2 {}
@@ -377,7 +371,7 @@ main #wrap .swiper-wrapper .design .design_details_swiper .swiper-wrapper .swipe
 main #wrap .swiper-wrapper .design .design_details_swiper .swiper-wrapper .swiper-slide img {
     position:absolute;
     left:0; top:0;
-    width:480px;
+    width:100%;
 }
 main #wrap .swiper-wrapper .design .design_details_swiper .swiper-wrapper .slide1 {}
 main #wrap .swiper-wrapper .design .design_details_swiper .swiper-wrapper .slide2 {}
