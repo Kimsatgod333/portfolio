@@ -10,6 +10,7 @@ const projectSwiper = new Swiper('.project_swiper',{
         prevEl:'.project .slide_btn_wrap .swiper-button-prev',
         nextEl:'.project .slide_btn_wrap .swiper-button-next',
     },
+    autoplay:true,
     centeredSlides: true,
     scrollbar:{
         el:'.project_swiper .swiper-scrollbar'

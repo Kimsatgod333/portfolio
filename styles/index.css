@@ -202,7 +202,7 @@ main #wrap .swiper-wrapper .project .project_swiper {
     height:100vh;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper {
-    padding:20px;
+    padding:80px 0;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide {
     display:flex;
@@ -246,8 +246,9 @@ main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slid
     margin-bottom:12px;
 }
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info .program {
-    margin-top:12px;
+    margin:12px 0;
 }
+main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .project_wrap .project_info .contri {}
 main #wrap .swiper-wrapper .project .project_swiper .swiper-wrapper .swiper-slide .btn_wrap {
     display:flex;
     gap:15px;
